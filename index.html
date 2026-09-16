@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajería y Carga | Carlos A. Díaz</title>
+    <!-- Tailwind CSS para estilos rápidos y profesionales -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Colores corporativos basados en la tarjeta */
+        .bg-brand-dark { background-color: #1a365d; }
+        .text-brand-dark { color: #1a365d; }
+        .bg-brand-light { background-color: #3182ce; }
+        .hover-brand-light:hover { background-color: #2b6cb0; }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50 flex flex-col min-h-screen">
 
+    <!-- Navegación -->
+    <nav class="bg-brand-dark text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center max-w-5xl">
+            <div class="text-2xl font-bold flex items-center gap-2">
+                <i class="fa-solid fa-box-open"></i>
+                Mensajería y Carga
+            </div>
+            <div class="hidden md:flex gap-4">
+                <a href="mailto:cadiazp@hotmail.com" class="hover:text-blue-300 transition"><i class="fa-regular fa-envelope"></i> cadiazp@hotmail.com</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <header class="bg-white py-16 px-4 text-center border-b border-gray-200 flex-grow flex items-center">
+        <div class="container mx-auto max-w-4xl">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-brand-dark mb-6">
+                Transporte Seguro y Confiable para tu Carga
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Soluciones logísticas integrales en Bogotá y sus alrededores. Tu mercancía llega a tiempo y en perfectas condiciones bajo la responsabilidad de Carlos A. Díaz.
+            </p>
+            
+            <!-- Botón CTA principal -->
+            <a href="https://wa.me/573105778125?text=Hola,%20me%20gustaría%20cotizar%20un%20viaje%20de%20mensajería/carga." 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-bold text-lg py-4 px-8 rounded-full shadow-lg transform transition hover:scale-105">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                Cotizar Viaje Ahora
+            </a>
+            <p class="mt-4 text-sm text-gray-500">Respuesta inmediata vía WhatsApp</p>
+        </div>
+    </header>
+
+    <!-- Sección de Servicios -->
+    <section class="py-16 px-4 bg-gray-50">
+        <div class="container mx-auto max-w-5xl text-center">
+            <h2 class="text-3xl font-bold text-brand-dark mb-12">Nuestros Servicios</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <div class="text-4xl text-brand-light mb-4"><i class="fa-solid fa-truck-fast"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Mensajería Ágil</h3>
+                    <p class="text-gray-600">Entregas rápidas de documentos y paquetería pequeña con seguimiento puntual.</p>
+                </div>
+                
+                <!-- Servicio 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <div class="text-4xl text-brand-light mb-4"><i class="fa-solid fa-truck-moving"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Transporte de Carga</h3>
+                    <p class="text-gray-600">Vehículos acondicionados para el traslado seguro de mercancía y volúmenes medianos.</p>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <div class="text-4xl text-brand-light mb-4"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Cobertura Local</h3>
+                    <p class="text-gray-600">Operación central en Bogotá, Colombia, garantizando conocimiento de las mejores rutas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-gray-300 py-10 px-4 mt-auto">
+        <div class="container mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            
+            <div>
+                <h4 class="text-white text-xl font-bold mb-4">Carlos A. Díaz</h4>
+                <p>Especialistas en Mensajería y Carga.</p>
+                <p class="mt-2"><i class="fa-solid fa-location-dot mr-2"></i> Bogotá, Colombia</p>
+            </div>
+            
+            <div>
+                <h4 class="text-white text-xl font-bold mb-4">Líneas de Atención</h4>
+                <p class="mb-2"><i class="fa-brands fa-whatsapp mr-2 text-green-400"></i> Cel: 310 577 8125</p>
+                <p><i class="fa-solid fa-mobile-screen mr-2"></i> Cel: 315 430 6124</p>
+            </div>
+            
+            <div>
+                <h4 class="text-white text-xl font-bold mb-4">Contacto Digital</h4>
+                <a href="mailto:cadiazp@hotmail.com" class="hover:text-white transition">
+                    <i class="fa-regular fa-envelope mr-2"></i> cadiazp@hotmail.com
+                </a>
+                <div class="mt-6">
+                    <a href="https://wa.me/573105778125" target="_blank" class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg font-semibold inline-flex items-center gap-2 transition">
+                        <i class="fa-brands fa-whatsapp"></i> Chat Directo
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="container mx-auto max-w-5xl mt-8 pt-4 border-t border-gray-600 text-center text-sm text-gray-400">
+            &copy; 2026 Carlos A. Díaz - Mensajería y Carga. Todos los derechos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>
