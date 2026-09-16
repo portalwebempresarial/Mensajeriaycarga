@@ -19,7 +19,7 @@
 <body class="font-sans antialiased text-gray-800 bg-gray-50 flex flex-col min-h-screen">
 
     <!-- Navegación -->
-    <nav class="bg-brand-dark text-white p-4 shadow-md">
+    <nav class="bg-brand-dark text-white p-4 shadow-md relative z-20">
         <div class="container mx-auto flex justify-between items-center max-w-5xl">
             <div class="text-2xl font-bold flex items-center gap-2">
                 <i class="fa-solid fa-box-open"></i>
@@ -31,50 +31,55 @@
         </div>
     </nav>
 
-    <!-- Sección Hero -->
-    <header class="bg-white py-16 px-4 text-center border-b border-gray-200 flex-grow flex items-center">
-        <div class="container mx-auto max-w-4xl">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-brand-dark mb-6">
+    <!-- Sección Hero con Imagen de Fondo -->
+    <!-- Nota: Asegúrate de que el nombre del archivo coincida con la imagen descargada -->
+    <header class="relative bg-cover bg-center py-24 px-4 text-center flex-grow flex items-center border-b border-gray-200" style="background-image: url('watermarked_img_8625587267332844223.jpg');">
+        
+        <!-- Overlay oscuro/azulado para mejorar la lectura del texto -->
+        <div class="absolute inset-0 bg-[#0b1c3c]/70 backdrop-blur-[2px]"></div>
+        
+        <div class="container mx-auto max-w-4xl relative z-10 text-white">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 drop-shadow-lg leading-tight">
                 Transporte Seguro y Confiable para tu Carga
             </h1>
-            <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-                Soluciones logísticas integrales en Bogotá y sus alrededores. Tu mercancía llega a tiempo y en perfectas condiciones bajo la responsabilidad de Carlos A. Díaz.
+            <p class="text-lg md:text-2xl text-blue-100 mb-10 max-w-3xl mx-auto drop-shadow-md">
+                Soluciones logísticas integrales y de alta tecnología. Tu mercancía llega a tiempo y en perfectas condiciones.
             </p>
             
             <!-- Botón CTA principal -->
             <a href="https://wa.me/573105778125?text=Hola,%20me%20gustaría%20cotizar%20un%20viaje%20de%20mensajería/carga." 
                target="_blank" 
                rel="noopener noreferrer"
-               class="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-bold text-lg py-4 px-8 rounded-full shadow-lg transform transition hover:scale-105">
-                <i class="fa-brands fa-whatsapp text-2xl"></i>
+               class="inline-flex items-center gap-3 bg-green-500 hover:bg-green-400 text-white font-bold text-xl py-4 px-10 rounded-full shadow-[0_0_20px_rgba(34,197,94,0.5)] transform transition hover:-translate-y-1 hover:scale-105">
+                <i class="fa-brands fa-whatsapp text-3xl"></i>
                 Cotizar Viaje Ahora
             </a>
-            <p class="mt-4 text-sm text-gray-500">Respuesta inmediata vía WhatsApp</p>
+            <p class="mt-5 text-sm md:text-base text-blue-200 font-medium tracking-wide">Respuesta inmediata vía WhatsApp</p>
         </div>
     </header>
 
     <!-- Sección de Servicios -->
-    <section class="py-16 px-4 bg-gray-50">
+    <section class="py-16 px-4 bg-gray-50 relative z-10">
         <div class="container mx-auto max-w-5xl text-center">
             <h2 class="text-3xl font-bold text-brand-dark mb-12">Nuestros Servicios</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Servicio 1 -->
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition transform hover:-translate-y-2 duration-300">
                     <div class="text-4xl text-brand-light mb-4"><i class="fa-solid fa-truck-fast"></i></div>
                     <h3 class="text-xl font-bold mb-2">Mensajería Ágil</h3>
                     <p class="text-gray-600">Entregas rápidas de documentos y paquetería pequeña con seguimiento puntual.</p>
                 </div>
                 
                 <!-- Servicio 2 -->
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition transform hover:-translate-y-2 duration-300">
                     <div class="text-4xl text-brand-light mb-4"><i class="fa-solid fa-truck-moving"></i></div>
                     <h3 class="text-xl font-bold mb-2">Transporte de Carga</h3>
                     <p class="text-gray-600">Vehículos acondicionados para el traslado seguro de mercancía y volúmenes medianos.</p>
                 </div>
 
                 <!-- Servicio 3 -->
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition transform hover:-translate-y-2 duration-300">
                     <div class="text-4xl text-brand-light mb-4"><i class="fa-solid fa-map-location-dot"></i></div>
                     <h3 class="text-xl font-bold mb-2">Cobertura Local</h3>
                     <p class="text-gray-600">Operación central en Bogotá, Colombia, garantizando conocimiento de las mejores rutas.</p>
@@ -84,7 +89,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-brand-dark text-gray-300 py-10 px-4 mt-auto">
+    <footer class="bg-brand-dark text-gray-300 py-10 px-4 mt-auto relative z-10">
         <div class="container mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
             
             <div>
